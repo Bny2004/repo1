@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>specificity in css</title>
+    <style>
+        header.navigation p{
+            color: blue;
+        }
+        p.blurb {
+            color: red;
+        }
+        p {
+            color: rgb(31, 228, 31) !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="navigation">
+        <p class="blurb">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. 
+            Deserunt voluptatem error 
+            doloribus mollitia perferendis 
+            delectus obcaecati optio 
+            facilis natus suscipit quisquam 
+            rem, molestiae alias rerum 
+            provident dignissimos commodi 
+            voluptatum consequuntur?
+        </p>
+    </header>
+</body>
+</html>

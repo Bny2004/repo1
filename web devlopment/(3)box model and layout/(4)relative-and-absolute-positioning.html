@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative and absolute  Positioning</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+           margin-bottom: 15px;
+        }
+        div#container{
+            background-color: #00ffff;
+            position: relative;
+            top: 60px;
+        }
+        p{
+            width: 100px;
+            height: 300px;
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+
+        /*absolute positioning eg*/
+        /*movw the block directly*/
+        #p1 {
+            background-color: rgb(241, 213, 179);
+            position: absolute;
+            top: opx;
+            left: 105px;
+        }
+        #p2 {
+            background-color: rgb(150, 92, 119);
+        }
+        #p3 {
+            background-color: rgb(49, 201, 125);
+        }
+
+        /*relative positioning eg*/
+        /*moves visuals of box while the box remains in same place*/
+        #p4 {
+            background-color: rgb(16, 20, 252);
+            position: relative;
+            bottom: 315px;
+            left: 105px;
+        }
+    </style>
+</head>
+<body>
+    <h1>positioning elements</h1>
+
+    <div id="container">
+        <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ducimus nisi dolorum amet impedit soluta quidem eos quasi. Minus doloribus, voluptate quas suscipit aspernatur dolor? Possimus</p>
+        <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quis omnis impedit maxime, vitae expedita sunt eligendi minus ipsam eos soluta hic esse ipsum harum accusantium possimus ad voluptate officiis.</p>
+        <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima nam in temporibus, corporis ab vero repellendus tempora, quidem asperiores assumenda vitae. Culpa, deserunt error minus!</p>
+        <p id="p4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolorem quae, est ad sint culpa sequi, veniam facere asperiores minus tempore, reprehenderit blanditiis quisquam quas repellat?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box model</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: gray;
+        }
+        #box {
+            background-color: blue;
+            padding: 10px 10px 10px 10px;
+                 /*top  right bottom left*/
+            border: 5px solid black;
+            margin: 40px;
+            height: 300px;
+            width: 300px;
+            box-sizing: border-box; 
+             /*makes is sothat padding
+            ,border,margine are included
+            when width & height is defined*/
+
+            overflow: auto;
+            /*adds scroll bar where needed*/
+        }
+    
+        #content{
+            background-color: #90ee90;   /*green*/
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Box Model</h1>
+    <div id="box">
+        <div id="content">Lorem ipsum dolor sit amet 
+            consectetur, adipisicing elit. Praesentium 
+            odit eum delectus neque quos sit. Qui, quos aut. 
+            Dignissimos itaque dicta omnis explicabo possimus,
+            enim eius expedita sunt quam amet. Lorem ipsum dolor 
+            sit amet consectetur adipisicing elit. Saepe, 
+            perspiciatis explicabo. Dolorum, modi sunt porro 
+            dolores ipsam, officiis facilis iure, possimus 
+            tempora quae aliquid odit autem obcaecati consequatur 
+            in quidem. Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. Qui, quos expedita sint reiciendis 
+            architecto sunt magni cum quis. Voluptatem nesciunt 
+            numquam, aliquid ab illo enim molestias cupiditate 
+            magnam eligendi! Deleniti.</div>
+    </div>
+</body>
+</html>
